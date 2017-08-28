@@ -1,6 +1,6 @@
-import Header from '../components/Header'
+import SubComponent from '../components/SubComponent'
 
 export default () => ( 
-  <Header />
+  <SubComponent />
 )
 

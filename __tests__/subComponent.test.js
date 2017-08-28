@@ -3,13 +3,12 @@
 import { shallow } from 'enzyme'
 import React from 'react'
 
-import App from '../pages/index.js'
 import SubComponent from '../components/SubComponent'
 
 describe('With Enzyme', () => {
-  it('App shows SubComponent', () => {
-    const app = shallow(<App />)
-    expect(app.find(<SubComponent />));
+  it('SubComponent shows Hello!', () => {
+    const app = shallow(<SubComponent />)
+    expect(app.find('p').text()).toBe('Hello!');
     
   })
 })
