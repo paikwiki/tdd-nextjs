@@ -9,8 +9,6 @@ import SubComponent from '../components/SubComponent'
 describe('With Enzyme', () => {
   it('App shows SubComponent', () => {
     const app = shallow(<App />)
-    expect(app.find(<SubComponent />));
-    
+    expect(app.containsMatchingElement(<SubComponent/>)).toBeTruthy();
   })
 })
-
